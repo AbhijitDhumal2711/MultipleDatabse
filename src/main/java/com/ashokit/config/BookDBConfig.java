@@ -29,7 +29,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 public class BookDBConfig {
 
 	@Bean(name = "bookDataSource")
-	@ConfigurationProperties(prefix = "spring.book.datasource")
+	@ConfigurationProperties(prefix = "spring.user.datasource")
 	public DataSource dataSource() {
 		return DataSourceBuilder.create().build();
 	}

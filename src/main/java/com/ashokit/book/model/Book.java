@@ -18,4 +18,13 @@ public class Book {
 	@Id
 	private int id;
 	private String name;
+	public Book(int id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
+	
+	public Book() {
+		// TODO Auto-generated constructor stub
+	}
 }
